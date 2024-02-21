@@ -33,7 +33,7 @@ button.addEventListener('click', function(){
     }
 
     if (counter == 34){
-        button.style.padding = "7px 7px";
+        button.style.padding = "10px 10px";
     }
 
     if (counter == 35){
@@ -114,7 +114,7 @@ button.addEventListener('click', function(){
         },getRandom(1000,2000));
     }
 
-    if (counter == 120){
+    if (counter == 123){
         setTimeout(function(){
             gameTitle.innerHTML = "Isn't this fun?";
         },getRandom(1000,2000));
@@ -122,13 +122,100 @@ button.addEventListener('click', function(){
 
     if (counter == 125){
         setTimeout(function(){
-            gameTitle.innerHTML = "Just me and you, on this journey to....";
+            gameTitle.innerHTML = "";
         },getRandom(1000,2000));
     }
 
     if (counter == 127){
         setTimeout(function(){
+            gameTitle.innerHTML = "Just me and you, on this journey to....";
+        },getRandom(1000,2000));
+    }
+
+    if (counter == 129){
+        setTimeout(function(){
+            gameTitle.innerHTML = "";
+        },getRandom(500,800));
+    }
+
+    if (counter == 131){
+        setTimeout(function(){
             gameTitle.innerHTML = "...what is it you're doing again?";
+        },getRandom(1000,2000));
+    }
+
+    if (counter == 134){
+        setTimeout(function(){
+            gameTitle.innerHTML = "...";
+        },getRandom(1000,2000));
+    }
+
+    if (counter == 137){
+        setTimeout(function(){
+            gameTitle.innerHTML = "...really? That's why you've been here so long?";
+        },getRandom(1000,2000));
+    }
+
+    if (counter == 139){
+        setTimeout(function(){
+            gameTitle.innerHTML = "";
+        },getRandom(1000,2000));
+    }
+
+    if (counter == 141){
+        setTimeout(function(){
+            gameTitle.innerHTML = "Isn't there something better you could be doing?";
+        },getRandom(1000,2000));
+    }
+
+    if (counter == 143){
+        setTimeout(function(){
+            gameTitle.innerHTML = "Going outside? Talking with your family?";
+        },getRandom(1000,2000));
+    }
+
+    if (counter == 145){
+        setTimeout(function(){
+            gameTitle.innerHTML = "";
+        },getRandom(1000,2000));
+    }
+
+    if (counter == 147){
+        setTimeout(function(){
+            gameTitle.innerHTML = "You know you can quit right? You can stop at any time.";
+        },getRandom(1000,2000));
+    }
+
+    if (counter == 149){
+        setTimeout(function(){
+            gameTitle.innerHTML = "Or not, I guess. Up to you.";
+        },getRandom(1000,2000));
+    }
+
+    if (counter == 151){
+        setTimeout(function(){
+            gameTitle.innerHTML = "";
+        },getRandom(1000,2000));
+    }
+
+    if (counter == 175){
+        setTimeout(function(){
+            gameTitle.innerHTML = "Here, let's have a little fun.";
+        },getRandom(1000,2000));
+    }
+
+    ///I will figure this out later
+    if (counter == 180){
+        setTimeout(function(){
+            gameTitle.innerHTML = "Pick a color. Any color";
+            var colorPicker = document.createElement("INPUT");
+            colorPicker.setAttribute("type", "color"); 
+            
+            const input = document.querySelector("input")
+            input.addEventListener("change", function(event){
+                const color = event.target.value;
+                console.log(color);
+            });
         },getRandom(1000,2000));
     }
 
