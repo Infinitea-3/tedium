@@ -205,17 +205,25 @@ button.addEventListener('click', function(){
     }
 
     ///I will figure this out later
-    if (counter == 180){
+    if (counter == 190){
         setTimeout(function(){
-            gameTitle.innerHTML = "Pick a color. Any color";
-            var colorPicker = document.createElement("INPUT");
-            colorPicker.setAttribute("type", "color"); 
-            
-            const input = document.querySelector("input")
-            input.addEventListener("change", function(event){
-                const color = event.target.value;
-                console.log(color);
-            });
+            gameTitle.innerHTML = "Pick a color. Any color."
+            var colorPicker = document.createElement("input");
+            colorPicker.setAttribute("type", "color");
+            colorPicker.classList.add("center");
+            button.innerHTML = "Color Selected!";
+            button.addEventListener("click",function test(){
+                colorChosen = colorPicker.value;
+                colorPicker.remove();
+                button.style.background = colorChosen;
+            }, {once: true});
+            document.body.appendChild(colorPicker);
+        },getRandom(1000,2000));
+    }
+
+    if (counter == 191){
+        setTimeout(function(){
+            button.innerHTML = "";
         },getRandom(1000,2000));
     }
 
